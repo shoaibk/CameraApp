@@ -15,8 +15,10 @@ export default function App() {
     // Camera permissions are not granted yet.
     return (
       <View style={styles.container}>
-        <Text style={styles.message}>Need camera permission</Text>
-        <Button onPress={requestPermission} title="Grant Permission" />
+        <Text style={styles.message}>
+          We need your permission to show the camera
+        </Text>
+        <Button onPress={requestPermission} title="grant permission" />
       </View>
     );
   }
